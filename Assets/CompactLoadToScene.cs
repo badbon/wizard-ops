@@ -7,6 +7,7 @@ public class CompactLoadToScene : MonoBehaviour
 {
     public void LoadScene(int sceneIndex)
     {
+        Destroy(FindObjectOfType<LoadScene>().gameObject);
         SceneManager.LoadScene(sceneIndex);
     }
 }
