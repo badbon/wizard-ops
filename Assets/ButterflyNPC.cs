@@ -56,6 +56,9 @@ public class ButterflyNPC : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Spell"))
         {
+            ButterflySpawner.instance.currentSpawnCount--;
+            ButterflySpawner.instance.butterflies.Remove(gameObject);
+            ButterflySpawner.instance.UpdateProgressBar();
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

@@ -10,6 +10,14 @@ public class TopDownCharController : MonoBehaviour
     
     public SpriteRenderer spriteRenderer;
 
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        LoadScene loadScene = FindObjectOfType<LoadScene>();
+        int currentWizard = loadScene.currentSelectedWizard;
+        GetComponent<WizardSpells>().wizardType = (WizardTypes)currentWizard;
+    }
+
     void Update()
     {
         Vector2 inputVector = new Vector2(0, 0);
