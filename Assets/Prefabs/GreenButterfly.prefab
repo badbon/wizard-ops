@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7640383778165025987}
   - component: {fileID: 4227871544217147445}
   - component: {fileID: -5022676741270298404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GreenButterfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}

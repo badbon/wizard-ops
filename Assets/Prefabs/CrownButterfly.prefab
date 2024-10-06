@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7640383778165025987}
   - component: {fileID: 4227871544217147445}
   - component: {fileID: 4889279502702093125}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CrownButterfly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
