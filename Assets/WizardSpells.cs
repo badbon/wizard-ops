@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WizardSpells : MonoBehaviour
 {
     public WizardTypes wizardType;
+    public Sprite[] wizardSprites;
 
     public GameObject firePrefab;
     public float fireSpellSpawnDistance = 1f;
@@ -14,6 +16,14 @@ public class WizardSpells : MonoBehaviour
     public float delayBetweenSpawns = 0.05f;
 
     public GameObject fabricPrefab;
+
+    public TextMeshProUGUI characterTypeText;
+
+    void Start()
+    {
+        characterTypeText.text = "Playing as " + wizardType.ToString() + " Wizard";
+        GetComponent<SpriteRenderer>().sprite = wizardSprites[(int)wizardType];
+    }
 
     void Update()
     {
