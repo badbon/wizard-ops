@@ -27,7 +27,7 @@ public class FireSpell : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = direction * speed;
+        rb.linearVelocity = direction * speed;
 
         lifeTimer += Time.deltaTime;
         if (lifeTimer > lifeTime)
